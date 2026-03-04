@@ -101,17 +101,40 @@
       box-shadow: 0 18px 60px rgba(0,0,0,.24);
       display:flex; flex-direction:column;
     }
+
+    /* ====== BAGIAN GAMBAR PRODUK (BARU) ====== */
     .img{
-      height:160px;
+      height:170px;
       background:
         linear-gradient(135deg, rgba(33,193,255,.16), rgba(167,139,250,.14)),
         radial-gradient(500px 180px at 20% 30%, rgba(255,255,255,.08), transparent 60%);
       border-bottom:1px solid var(--line);
-      display:flex; align-items:center; justify-content:center;
-      color:rgba(255,255,255,.65);
-      font-weight:800;
-      letter-spacing:.8px;
+      position:relative;
+      overflow:hidden;
     }
+    .img img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter:saturate(1.05) contrast(1.05);
+      transform:scale(1.02);
+    }
+    .img .tag{
+      position:absolute;
+      left:12px;
+      top:12px;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.6px;
+      color:rgba(255,255,255,.92);
+      background:rgba(0,0,0,.38);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+    }
+
     .content{padding:12px 12px 14px}
     .title{font-weight:800; margin:0 0 6px}
     .meta{color:var(--muted); font-size:13px; margin:0 0 10px; line-height:1.6}
@@ -152,9 +175,9 @@
 </head>
 
 <body>
-  <!-- GANTI NOMOR WA DI SINI -->
+  <!-- NOMOR WA SUDAH DISET KE PUNYA KAMU -->
   <script>
-    const NOMOR_WA = "6287740631891"; // ganti kalau perlu
+    const NOMOR_WA = "6281937986543"; // dari 081937986543
     const NAMA_TOKO = "One Mania Group";
     function orderWA(namaProduk, harga){
       const text =
@@ -243,7 +266,10 @@
         <div class="grid">
           <!-- Produk 1 -->
           <article class="card">
-            <div class="img">HOODIE</div>
+            <div class="img">
+              <img src="Hoodie Oversize Premium.png" alt="Hoodie Oversize Premium">
+              <span class="tag">HOODIE</span>
+            </div>
             <div class="content">
               <p class="title">Hoodie Oversize Premium</p>
               <p class="meta">Bahan: Fleece • Size: M–XL • Warna: Hitam/Abu</p>
@@ -257,7 +283,10 @@
 
           <!-- Produk 2 -->
           <article class="card">
-            <div class="img">KAOS</div>
+            <div class="img">
+              <img src="Kaos Cotton Combed 24s.webp" alt="Kaos Cotton Combed 24s">
+              <span class="tag">KAOS</span>
+            </div>
             <div class="content">
               <p class="title">Kaos Cotton Combed 24s</p>
               <p class="meta">Bahan: Cotton 24s • Size: S–XL • Warna: Putih/Hitam</p>
@@ -271,7 +300,10 @@
 
           <!-- Produk 3 -->
           <article class="card">
-            <div class="img">KEMEJA</div>
+            <div class="img">
+              <img src="Kemeja Linen Casual.jpg" alt="Kemeja Linen Casual">
+              <span class="tag">KEMEJA</span>
+            </div>
             <div class="content">
               <p class="title">Kemeja Linen Casual</p>
               <p class="meta">Bahan: Linen • Size: M–XL • Nyaman & adem</p>
@@ -285,7 +317,10 @@
 
           <!-- Produk 4 -->
           <article class="card">
-            <div class="img">CELANA</div>
+            <div class="img">
+              <img src="Celana Chino Stretch.jpg" alt="Celana Chino Stretch">
+              <span class="tag">CELANA</span>
+            </div>
             <div class="content">
               <p class="title">Celana Chino Stretch</p>
               <p class="meta">Bahan: Twill stretch • Size: 28–34 • Slim fit</p>
@@ -299,7 +334,10 @@
 
           <!-- Produk 5 -->
           <article class="card">
-            <div class="img">SET</div>
+            <div class="img">
+              <img src="Set Outfit (Atasan + Bawahan).webp" alt="Set Outfit (Atasan + Bawahan)">
+              <span class="tag">SET</span>
+            </div>
             <div class="content">
               <p class="title">Set Outfit (Atasan + Bawahan)</p>
               <p class="meta">Cocok harian • Size: M–XL • Banyak warna</p>
@@ -313,7 +351,10 @@
 
           <!-- Produk 6 -->
           <article class="card">
-            <div class="img">JAKET</div>
+            <div class="img">
+              <img src="Jaket Windbreaker.png" alt="Jaket Windbreaker">
+              <span class="tag">JAKET</span>
+            </div>
             <div class="content">
               <p class="title">Jaket Windbreaker</p>
               <p class="meta">Anti angin ringan • Size: M–XL • Outdoor ready</p>
@@ -327,7 +368,10 @@
 
           <!-- Produk 7 -->
           <article class="card">
-            <div class="img">DRESS</div>
+            <div class="img">
+              <img src="Dress Simple Elegant.webp" alt="Dress Simple Elegant">
+              <span class="tag">DRESS</span>
+            </div>
             <div class="content">
               <p class="title">Dress Simple Elegant</p>
               <p class="meta">Nyaman dipakai • Size: All size • Warna soft</p>
@@ -341,7 +385,10 @@
 
           <!-- Produk 8 -->
           <article class="card">
-            <div class="img">POLO</div>
+            <div class="img">
+              <img src="Polo Shirt Premium.png" alt="Polo Shirt Premium">
+              <span class="tag">POLO</span>
+            </div>
             <div class="content">
               <p class="title">Polo Shirt Premium</p>
               <p class="meta">Bahan: Pique • Size: M–XL • Look rapi</p>
