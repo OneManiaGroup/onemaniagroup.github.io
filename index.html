@@ -8,6 +8,9 @@
   <meta name="description" content="One Mania Group: toko pakaian online. Koleksi hoodie, kaos, kemeja, dan celana. Order cepat via WhatsApp." />
   <meta name="robots" content="index,follow" />
 
+  <!-- FAVICON (logo di tab browser) -->
+  <link rel="icon" type="image/png" href="logo.png">
+
   <style>
     :root{
       --bg:#0b1020;
@@ -47,6 +50,16 @@
       background: linear-gradient(135deg,var(--accent),var(--accent2));
       box-shadow: 0 16px 40px rgba(33,193,255,.18);
     }
+
+    /* LOGO IMAGE */
+    .logo-img{
+      width:40px;
+      height:40px;
+      border-radius:12px;
+      object-fit:cover;
+      display:block;
+    }
+
     .brand strong{display:block; letter-spacing:.2px}
     .brand span{display:block; font-size:12px; color:var(--muted)}
     .links{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
@@ -59,6 +72,7 @@
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
       padding:12px 14px; border-radius:14px; font-weight:700;
       border:1px solid var(--line); background:rgba(255,255,255,.04);
+      cursor:pointer;
     }
     .btn.primary{
       border:none;
@@ -102,7 +116,7 @@
       display:flex; flex-direction:column;
     }
 
-    /* ====== BAGIAN GAMBAR PRODUK (BARU) ====== */
+    /* GAMBAR PRODUK */
     .img{
       height:170px;
       background:
@@ -175,7 +189,6 @@
 </head>
 
 <body>
-  <!-- NOMOR WA SUDAH DISET KE PUNYA KAMU -->
   <script>
     const NOMOR_WA = "6281937986543"; // dari 081937986543
     const NAMA_TOKO = "One Mania Group";
@@ -264,7 +277,6 @@
         </div>
 
         <div class="grid">
-          <!-- Produk 1 -->
           <article class="card">
             <div class="img">
               <img src="Hoodie Oversize Premium.png" alt="Hoodie Oversize Premium">
@@ -281,7 +293,6 @@
             </div>
           </article>
 
-          <!-- Produk 2 -->
           <article class="card">
             <div class="img">
               <img src="Kaos Cotton Combed 24s.webp" alt="Kaos Cotton Combed 24s">
@@ -298,7 +309,6 @@
             </div>
           </article>
 
-          <!-- Produk 3 -->
           <article class="card">
             <div class="img">
               <img src="Kemeja Linen Casual.jpg" alt="Kemeja Linen Casual">
@@ -315,7 +325,6 @@
             </div>
           </article>
 
-          <!-- Produk 4 -->
           <article class="card">
             <div class="img">
               <img src="Celana Chino Stretch.jpg" alt="Celana Chino Stretch">
@@ -332,7 +341,6 @@
             </div>
           </article>
 
-          <!-- Produk 5 -->
           <article class="card">
             <div class="img">
               <img src="Set Outfit (Atasan + Bawahan).webp" alt="Set Outfit (Atasan + Bawahan)">
@@ -349,7 +357,6 @@
             </div>
           </article>
 
-          <!-- Produk 6 -->
           <article class="card">
             <div class="img">
               <img src="Jaket Windbreaker.png" alt="Jaket Windbreaker">
@@ -366,7 +373,6 @@
             </div>
           </article>
 
-          <!-- Produk 7 -->
           <article class="card">
             <div class="img">
               <img src="Dress Simple Elegant.webp" alt="Dress Simple Elegant">
@@ -383,7 +389,6 @@
             </div>
           </article>
 
-          <!-- Produk 8 -->
           <article class="card">
             <div class="img">
               <img src="Polo Shirt Premium.png" alt="Polo Shirt Premium">
